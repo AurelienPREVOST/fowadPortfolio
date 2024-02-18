@@ -1,0 +1,232 @@
+body {
+  background: linear-gradient(to bottom, #8e44ad, #c0392b); /* Dégradé de violet */
+  background-attachment: fixed;
+}
+
+/* FOOTER */
+
+#footer {
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: black;
+    width: 100%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  
+    span {
+      width:100%;
+    }
+  
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    img {
+        height: 50px;
+        width: 50px;
+        margin:2%;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+  }
+
+
+  /* Banner */
+
+  #myface {
+    position: absolute;
+    border-radius: 50%;
+    height: 25vh;
+    width: 25vh;
+    right: 10px;
+    bottom: -20px;
+  }
+
+  #heroBanner {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://images.unsplash.com/photo-1546900703-cf06143d1239?q=80&w=3500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    text-align: right;
+    box-shadow: 0px 2px 5px grey;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.65);
+      mix-blend-mode: multiply;
+    }
+  
+    h1 {
+        color:white;
+        margin:10vh 2%;
+        mix-blend-mode:hard-light
+    }
+
+    button{
+        color:white;
+        background:crimson;
+        width:15%;
+        position:absolute;
+        bottom:40%;
+        right:5%;
+        padding:1rem;
+        border:none;
+        border-radius:40px;
+        transition: 300ms;
+  
+        &:hover {
+            transition: 300ms;
+            background:rgb(164, 3, 36)
+        }
+    }
+  }
+
+  /* Main */
+
+  #main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+    min-height: 90vh;
+    @media screen and (min-width: 960px) {
+      padding: 0 10%;
+    }
+  }
+  
+
+
+ /* Display Setup*/
+
+ #displaySetup {
+  margin-top: 10vh;
+  display:flex;
+  justify-content: center;
+  button {
+    border:none;
+    border-radius:5px;
+    padding:0.5rem;
+    margin:1rem;
+    background: rgba(0,0,0,0);
+    box-shadow: 0px 1px 2px rgba(100,100,100,0.2);
+    &:hover {
+      box-shadow: 0px 1px 2px rgba(100,100,100,0.8);
+    }
+  }
+ }
+
+
+
+  /* Card */
+.projectCard-item {
+  border-radius: 5px;
+  margin: 0.5rem;
+  box-shadow: 0px 2px 4px grey;
+  height: auto;
+  padding: 5px;
+
+  &:nth-child(even) {
+    background:rgb(198, 186, 225)
+  }
+
+  &:nth-child(odd) {
+    background:rgb(176, 155, 226)
+  }
+}
+
+.vw25 {
+  width: 25vw;
+}
+
+.vw100 {
+  width: 100vw;
+}
+
+.projectCard-item h2 {
+  color: rgb(62, 18, 27);
+  text-indent: 1.5rem;
+}
+
+.projectCard-item p {
+  text-indent: 1.5rem;
+}
+
+.Illustration-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 300px;
+}
+
+.percent30 {
+  width:30%
+}
+
+.projectCard-item .Illustration-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+
+}
+
+.projectCard-buttons{
+  margin-top: 2.5rem;
+}
+
+
+.projectCard-item a {
+  text-align: center;
+  text-decoration: none;
+  border:none;
+  border-radius:20px;
+  box-shadow: 0 1px 2px grey;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  width: 75%;
+  opacity: 0.8;
+  &:hover {
+    box-shadow: 0 2px 3px grey;
+    opacity: 1;
+  }
+}
+
+.projectCard-item a {
+  /* Votre style pour le premier bouton ici */
+  background-color: greenyellow;
+  color: black;
+}
+
+.projectCard-item a:last-child {
+  /* Votre style pour le dernier bouton ici */
+  background-color: blueviolet;
+  color: #ffffff;
+}
+
+.projectCard-info {
+  min-width: 50%;
+  margin:1rem auto;
+}
+
+
