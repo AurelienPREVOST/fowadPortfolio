@@ -2,6 +2,17 @@
 
 ## A destination de Fowad uniquement:  
 
+1 - clone le repo sur ton PC:
+
+```git clone https://github.com/AurelienPREVOST/fowadPortfolio.git```
+
+2 - installer les packages
+ ```npm install```
+
+3 - lance le serveur
+
+```npm run dev```
+
 Le code css est volontairement non linéaire. Par cela j'entends que je t'ai par exemple mis du SCSS marié avec du CSS classique (donc imbriqué/nesté ou non) pour que tu vois la différence. Il y a aussi des positions absolute et relative pour toi comprendre et appréhender le concept. Tu trouvera aussi un eventlistener en JS qui supprime ou affiche da photo selon la resolution d'ecran. Ce n'est pas du CSS il est bel et bien supprimé du DOM. Je l'ai fais uniquement dans un but d'apprentissage pour que tu vois la dynamique.  
 
 Le style graphique est volontairement discutable pour que tu te l'approprie et mette les couleurs que tu souhaite. N'hésite pas a manipuler les classes etc.  
